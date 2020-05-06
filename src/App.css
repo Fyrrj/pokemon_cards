@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap");
+
+/*font-family: 'Rajdhani', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
+  font-family: "Rajdhani", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: #000;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logotype-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logotype-container h1 {
+  font-size: 5rem;
+  color: #f8e85e;
+  margin-right: 20px;
+}
+.logotype-container img {
+  height: 85%;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+}
+
+.search-input {
+  border: none;
+  border-bottom: 2px solid #f8e85e;
+  padding: 10px 20px;
+  outline: none;
+  text-align: left;
+  font-family: "Rajdhani", sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.search-input::placeholder {
+  color: #fff;
+}
+
+.search-icon {
+  color: #f8e85e;
+  font-size: 1.5rem;
+}
+
+.cards-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 100%;
+  gap: 30px 30px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.top-info h2 {
+  font-size: 2rem;
+}
+
+.top-info p {
+  font-size: 1.2rem;
+  color: #545e62;
+}
+
+span.bolder {
+  font-weight: 800;
+}
+
+.bottom-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 10px 0 10px 20px;
+}
+
+.bottom-info span {
+  color: #e53d39;
+  margin-right: 4px;
+  font-size: 1.5rem;
+}
+
+.bottom-info p {
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 2px;
+  color: #545e62;
+}
+
+.load-btn {
+  padding: 10px 20px;
+  margin: 20px 10px;
+  font-family: "Rajdhani";
+  background-color: #f8e85e;
+  color: #000;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.load-btn:hover {
+  background-color: #000;
+  color: #fff;
 }
